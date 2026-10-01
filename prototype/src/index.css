@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #2563eb;
+  --color-brand-secondary: #059669;
+  --color-bg-main: #f8fafc;
+  --color-surface: #ffffff;
+  --color-border-subtle: #e2e8f0;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --shadow-tiny: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-bg-main)] text-slate-900 font-sans antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white border border-slate-200 rounded-lg shadow-sm;
+}
+
+.bottom-nav-item {
+  @apply flex flex-col items-center justify-center p-2 text-slate-500 transition-colors duration-200;
+}
+
+.bottom-nav-item.active {
+  @apply text-brand-primary;
+}
+
+/* Priority chips updated for high density */
+.priority-chip {
+  @apply px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider border transition-all;
+}
+
+.priority-chip.low { @apply bg-slate-100 border-slate-200 text-slate-600; }
+.priority-chip.mid { @apply bg-slate-100 border-slate-200 text-slate-600; }
+.priority-chip.high { @apply bg-slate-100 border-slate-200 text-slate-600; }
+
+.priority-chip.selected.low { @apply bg-green-100 border-green-200 text-green-700; }
+.priority-chip.selected.mid { @apply bg-yellow-100 border-yellow-200 text-yellow-700; }
+.priority-chip.selected.high { @apply bg-red-100 border-red-200 text-red-700; }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
