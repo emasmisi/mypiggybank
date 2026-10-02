@@ -78,6 +78,6 @@ npm run dev     # http://localhost:3000
 
 ## Team
 
-Jacopo Rossi, Fabiano Cacioli, Emanuele Smisi, Luca Buonomini https://github.com/luca02buonomini, Fabrizio Pietrobono ([@Biziopietrobono](https://github.com/Biziopietrobono)).
+Jacopo Rossi (@enoughpaladin00), Fabiano Cacioli, Emanuele Smisi, Luca Buonomini https://github.com/luca02buonomini, Fabrizio Pietrobono ([@Biziopietrobono](https://github.com/Biziopietrobono)).
 
 Course: User-Driven Software Engineering, Master's in Engineering in Computer Science and Artificial Intelligence, Sapienza University of Rome, A.Y. 2025/26.
